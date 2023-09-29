@@ -22,10 +22,17 @@ public class MainActivity extends AppCompatActivity {
         btCadastrarItem = findViewById(R.id.btCadastrarItem);
         btLancarPedido = findViewById(R.id.btLancarPedido);
 
-        btLancarPedido.setOnClickListener(new View.OnClickListener() {
+        btCadastrarCliente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 abrirActivity(CadastroClienteActivity.class);
+            }
+        });
+
+        btLancarPedido.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirActivity(LancarPedidoActivity.class);
             }
         });
 
@@ -33,13 +40,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 abrirActivity(CadastroItemActivity.class);
-            }
-        });
-
-        btCadastrarCliente.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                abrirActivity(LancarPedidoActivity.class);
             }
         });
     }

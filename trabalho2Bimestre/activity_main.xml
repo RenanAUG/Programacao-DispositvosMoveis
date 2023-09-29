@@ -7,21 +7,15 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VendaSoft!"
-        android:textSize="21dp"
-        android:layout_gravity="center"/>
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btCadastrarCliente"
         android:text="Cadastrar Cliente"
         android:layout_gravity="center"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:id="@+id/btCadastrarCliente"
+        />
 
     <Button
         android:layout_width="match_parent"
