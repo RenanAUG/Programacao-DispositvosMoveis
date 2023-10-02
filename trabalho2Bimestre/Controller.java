@@ -2,6 +2,7 @@ package com.example.trabalho2bimestre;
 
 import com.example.trabalho2bimestre.modelo.Cliente;
 import com.example.trabalho2bimestre.modelo.Item;
+import com.example.trabalho2bimestre.modelo.Pedido;
 
 import java.util.ArrayList;
 
@@ -12,6 +13,8 @@ public class Controller {
     private ArrayList<Cliente> listaCliente;
 
     private ArrayList<Item> listaItem;
+
+    private ArrayList<Pedido> listaPedido;
 
     public static Controller getInstance() {
         if (instancia == null) {
@@ -24,6 +27,7 @@ public class Controller {
     private Controller() {
         listaCliente = new ArrayList<>();
         listaItem = new ArrayList<>();
+        listaPedido = new ArrayList<>();
     }
 
     public void salvarCliente(Cliente cliente) {
@@ -40,5 +44,13 @@ public class Controller {
 
     public ArrayList<Item> retornarItem() {
         return listaItem;
+    }
+
+    public void salvarPedido(Pedido pedido) {
+        listaPedido.add(pedido);
+    }
+
+    public ArrayList<Pedido> retornarPedido() {
+        return listaPedido;
     }
 }

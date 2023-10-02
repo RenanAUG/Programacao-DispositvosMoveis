@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CadastroClienteActivity"
+    android:padding="10dp"
     android:orientation="vertical">
 
     <TextView
@@ -38,6 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Informe o cpf do cliente"
+        android:inputType="number"
         android:id="@+id/edCpfCliente"/>
 
     <LinearLayout
@@ -50,7 +52,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/btCancelar"
-            android:background="@color/btCancelar"
             android:text="Cancelar"
             android:layout_marginTop="10dp"/>
 

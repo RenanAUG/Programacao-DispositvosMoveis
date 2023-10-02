@@ -43,6 +43,7 @@ public class CadastroItemActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 salvarItem();
+                atualizarListaItem();
             }
         });
 
@@ -79,8 +80,6 @@ public class CadastroItemActivity extends AppCompatActivity {
         Toast.makeText(CadastroItemActivity.this,
                 "Item Cadastrado com Sucesso!",
                 Toast.LENGTH_LONG).show();
-
-        this.finish();
     }
 
     private void atualizarListaItem() {

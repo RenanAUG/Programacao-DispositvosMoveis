@@ -40,6 +40,7 @@ public class CadastroClienteActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 salvarCliente();
+                atualizarListaCliente();
             }
         });
 
@@ -72,8 +73,6 @@ public class CadastroClienteActivity extends AppCompatActivity {
         Toast.makeText(CadastroClienteActivity.this,
                 "Cliente Cadastrado com Sucesso!",
                 Toast.LENGTH_LONG).show();
-
-        this.finish();
     }
 
     private void atualizarListaCliente() {

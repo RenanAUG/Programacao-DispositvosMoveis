@@ -2,7 +2,7 @@ package com.example.trabalho2bimestre.modelo;
 
 public class Item {
 
-    private Integer codigoItem;
+    private int codigoItem;
 
     private String descricao;
 
@@ -12,11 +12,11 @@ public class Item {
 
     }
 
-    public Integer getCodigoItem() {
+    public int getCodigoItem() {
         return codigoItem;
     }
 
-    public void setCodigoItem(Integer codigoItem) {
+    public void setCodigoItem(int codigoItem) {
         this.codigoItem = codigoItem;
     }
 
